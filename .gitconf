@@ -1,0 +1,5 @@
+[alias]
+	fetch-all-sub = submodule foreach 'git fetch'
+	# do a pull on the submodule, if you do a checkout master than the saved commit in the submodule copy of master (last fetch) is retrieved.
+	update-all = "!f() { B=$1 && git checkout $B && echo 'checking out \"'$1'\" branch of all submodules' && git submodule foreach 'git pull origin' $B; }; f"
+	# " && git submodule foreach 'git checkout origin $1'"
