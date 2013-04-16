@@ -9,4 +9,5 @@
 [submodule "proj3"]
 	path = proj3
 	url = https://github.com/libby/proj3.git
-	branch = bird
+	branch = bird	
+
